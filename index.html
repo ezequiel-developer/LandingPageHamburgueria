@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define o conjunto de caracteres UTF-8 para suportar todos os caracteres possíveis -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para ajustar o layout de acordo com o dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Hamburgueria Kiel</title>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="./LandingPageHamburgueria/public/assets/fav.png" type="image/x-icon">
+    <!-- Estilos para os ícones Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Estilos para os ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos personalizados compilados -->
+    <link rel="stylesheet" href="./LandingPageHamburgueria/public/output.css">
+    <link rel="stylesheet" href="./LandingPageHamburgueria/public/style.css">
+    <!-- Autor da página -->
+    <meta name="author" content="Ezequiel Avelino">
+</head>
+
+<body>
+
+    <!-- INICIO - HEADER -->
+    <header class="flex justify-around items-center bg-black h-16 fixed w-full top-0 z-50">
+
+        <!-- LOGO -->
+        <div class="pl-4">
+            <h1 class="text-white text-xl uppercase font-bold md:text-3xl">Kiel Burguer</h1>
+        </div>
+
+        <!-- MENU DESKTOP -->
+        <nav class="hidden lg:flex items-center gap-8">
+            <a href="#home" class="text-white lg:text-xl hover:text-[#FB8B0D]">Home</a>
+            <a href="#quemsomos" class="text-white lg:text-xl hover:text-[#FB8B0D]">Quem somos</a>
+            <a href="#cardapio" class="text-white lg:text-xl hover:text-[#FB8B0D]">Cardápio</a>
+            <a href="#contatos" class="text-white lg:text-xl hover:text-[#FB8B0D]">Contatos</a>
+            <a href="https://ezequiel-developer.github.io/CarrinhoDeComprasJS/" target="_blank"
+                class="bg-[#FB8B0D] lg:text-sm text-white p-2 rounded-md uppercase font-bold hover:scale-110 hover:text-black">Fazer
+                pedido</a>
+        </nav>
+
+        <!-- BOTÃO MENU MOBILE-->
+        <button id="menu-toggle" class="lg:hidden block px-4 py-2 focus:outline-none text-white">
+            <!-- Ícone de menu hambúrguer do FontAwesome -->
+            <i class="fas fa-bars ml-2 text-3xl md:text-5xl"></i>
+        </button>
+
+        <!-- MENU MOBILE -->
+        <div id="mobile-menu" class="hidden bg-black fixed top-16 left-0 right-0 z-50">
+
+            <ul class="flex flex-col items-center gap-4 md:gap-8 px-4 py-6">
+                <li>
+                    <a href="#home" class="text-white font-bold  text-lg md:text-2xl hover:text-[#FB8B0D]">Home</a>
+                </li>
+
+                <li>
+                    <a href="#quemsomos" class="text-white font-bold  text-lg md:text-2xl hover:text-[#FB8B0D]">Quem
+                        somos</a>
+                </li>
+
+                <li>
+                    <a href="#cardapio"
+                        class="text-white font-bold  text-lg md:text-2xl hover:text-[#FB8B0D]">Cardápio</a>
+                </li>
+
+                <li>
+                    <a href="#contatos"
+                        class="text-white font-bold  text-lg md:text-2xl hover:text-[#FB8B0D]">Contatos</a>
+                </li>
+
+                <li>
+                    <a href="https://ezequiel-developer.github.io/CarrinhoDeComprasJS/" target="_blank"
+                        class="bg-[#FB8B0D] font-bold  text-lg md:text-2xl text-white p-2 rounded-md hover:text-black">Fazer
+                        pedido</a>
+                </li>
+            </ul>
+
+        </div> <!-- FIM MENU MOBILE -->
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INICIO - HEADLINE -->
+    <section
+        class="h-screen flex flex-col justify-center items-center bg-zinc-900 custom-background bg-cover bg-center elementsY"
+        id="home">
+        <div class="text-center">
+            <img src="./LandingPageHamburgueria/public/assets/hamburgueria-logo.png" alt="Logo Kiel Hamburueria"
+                class="h-[200px] md:h-[350px] max-w-full mx-auto shadow-lg hover:scale-110 duration-200" />
+
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white md:text-5xl">O melhor Hamburguer.</h1>
+        </div>
+    </section>
+    <!-- FIM DA HEADLINE -->
+
+    <!-- INICIO CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- INICIO - QUEM SOMOS -->
+        <section
+            class="bg-black flex flex-col md:flex-row justify-center font-bold md:justify-around items-center h-screen px-4"
+            id="quemsomos">
+
+            <div class="w-full md:w-1/3">
+                <h2 class="text-white text-xl lg:text-3xl xl:text-3xl md:text-4xl text-center uppercase font-bold">
+                    A NOSSA PAIXÃO É SERVIR BURGERS QUE TODO MUNDO ADORA!
+                </h2>
+            </div>
+
+            <span class="border-[#C51D15] w-[300px] border-b-4 my-10 md:border-b-0 md:h-[300px] md:w-0 md:mx-10
+            md:border-r-4 "></span>
+
+            <div class="w-full md:w-1/2">
+                <p class="text-white text-xl md:text-3xl lg:text-1xl xl:text-3xl text-center">
+                    Na nossa casa, o hambúrguer é mais do que um prato; é uma paixão que se reflete em cada sabor e em
+                    cada detalhe. Combinamos tradição com criatividade para criar hambúrgueres que são verdadeiras
+                    obras-primas gastronômicas. Desde o primeiro até o último bife, cada momento é uma celebração do que
+                    há de melhor em sabores e experiências únicas.
+                </p>
+            </div>
+
+        </section>
+        <!-- FIM QUEM SOMOS -->
+
+        <!-- INICIO - MENU -->
+        <section class="bg-[#FB8B0D] min-h-screen flex flex-col justify-center  items-center py-20" id="cardapio">
+
+            <!-- TITULO -->
+            <div class="pb-20">
+                <h2
+                    class="text-black text-xl lg:text-3xl xl:text-3xl md:text-4xl font-bold border-b-4 border-[#C51D15]">
+                    Cardápio</h2>
+            </div>
+
+            <!-- CONTAINER CARDS -->
+            <div class="flex flex-wrap justify-center lg:justify-around gap-6 px-4">
+
+                <!-- CARD -->
+                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/5  cursor-pointer elementsX container">
+                    <div class="bg-black rounded-lg overflow-hidden relative" onclick="openModalCard('modal1')">
+                        <img src="./LandingPageHamburgueria/public/assets/hamburguer-1.png" alt="Sessão Hamburguers"
+                            class="w-full h-48 md:h-80 object-cover rounded-t-lg">
+                        <!-- Overlay -->
+                        <div
+                            class="overlay absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-300 flex justify-center items-center text-center">
+                        </div>
+                        <!-- Conteúdo do card -->
+                        <div class="flex flex-col justify-center items-center p-4">
+                            <h3 class="text-white text-2xl font-bold pb-2 border-b-4 border-[#C51D15] text-center">
+                                Burguers
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM CARD -->
+
+                <!-- CARD -->
+                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/5 cursor-pointer elementsX container">
+                    <div class="bg-black rounded-lg overflow-hidden relative" onclick="openModalCard('modal2')">
+                        <img src="./LandingPageHamburgueria/public/assets/sobremesa1.jpg" alt="Sessão Sobremesas"
+                            class="w-full h-48 md:h-80 object-cover rounded-t-lg">
+                        <!-- Overlay -->
+                        <div
+                            class="overlay absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-300 flex justify-center items-center text-center">
+                        </div>
+                        <!-- Conteúdo do card -->
+                        <div class="flex flex-col justify-center items-center p-4">
+                            <h3 class="text-white text-2xl font-bold pb-2 border-b-4 border-[#C51D15] text-center">
+                                Sobremesas
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM CARD -->
+
+                <!-- CARD -->
+                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/5 cursor-pointer elementsX container">
+                    <div class="bg-black rounded-lg overflow-hidden relative" onclick="openModalCard('modal3')">
+                        <img src="./LandingPageHamburgueria/public/assets/drinks-2578446_1280.jpg" alt="Sessão Drinks"
+                            class="w-full h-48 md:h-80 object-cover rounded-t-lg">
+                        <!-- Overlay -->
+                        <div
+                            class="overlay absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-300 flex justify-center items-center text-center">
+                        </div>
+                        <!-- Conteúdo do card -->
+                        <div class="flex flex-col justify-center items-center p-4">
+                            <h3 class="text-white text-2xl font-bold pb-2 border-b-4 border-[#C51D15] text-center">
+                                Drinks
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM CARD -->
+
+                <!-- CARD -->
+                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/5 cursor-pointer elementsX container">
+                    <div class="bg-black rounded-lg overflow-hidden relative" onclick="openModalCard('modal4')">
+                        <img src="./LandingPageHamburgueria/public/assets/promo3.jpg" alt="Sessão Combos"
+                            class="w-full h-48 md:h-80 object-cover rounded-t-lg">
+                        <!-- Overlay -->
+                        <div
+                            class="overlay absolute inset-0 bg-black opacity-0 hover:opacity-90 transition-opacity duration-300 flex justify-center items-center text-center">
+                        </div>
+                        <!-- Conteúdo do card -->
+                        <div class="flex flex-col justify-center items-center p-4">
+                            <h3 class="text-white text-2xl font-bold pb-2 border-b-4 border-[#C51D15] text-center">
+                                Combos
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM CARD -->
+
+            </div>
+            <!-- FIM CONTAINER CARDS -->
+
+            <!-- MODAIS -->
+
+            <!-- INICIO - MODAL 1 - CARD BURGUERS -->
+            <div id="modal1"
+                class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-[70]">
+
+                <div class="bg-white py-6 px-4 rounded-lg shadow-lg w-[95%] h-[80%] overflow-y-auto relative">
+
+                    <div class="fixed right-5 md:right-10 lg:right-20">
+                        <!-- Botão de fechar no canto superior direito -->
+                        <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                            onclick="closeModalCard('modal1')">X</button>
+                    </div>
+
+                    <div class="w-full flex flex-col gap-8 overflow-hidden">
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/hamburguer-1.png" alt="Smash Cheddar" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Cheddar</h3>
+                                <p class="text-md md:text-2xl text-black">Burguer duplo de 150g cada, com muito cheddar
+                                    e molho especial.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="/LandingPageHamburgueria/public/assets/hamburguer-2.png" alt="Smash Bacon" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Bacon</h3>
+                                <p class="text-md md:text-2xl text-black">Burguer duplo de 150g cada, um hambúrguer
+                                    irresistível com duas carnes de 150g, cheddar derretido cremoso, bacon crocante,
+                                    cebola caramelizada e molho especial</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/hamburguer-3.png" alt="Smash Cheese" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Cheese</h3>
+                                <p class="text-md md:text-2xl text-black">Burguer com carne de 200g, com queijo cheddar
+                                    empanado, cebola caramelizada, e molho especial.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/hamburguer-5.jpg" alt="Smash Master" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Master</h3>
+                                <p class="text-md md:text-2xl text-black">Servido em um pão brioche, Hambúrguer duplo de
+                                    150g cada, queijo cheddar derretido, generosas fatias de bacon crocante, cebola
+                                    caramelizada, alface, maionese artesanal e um molho especial da casa.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/hambuguer-6.png" alt="Smash Burguer Salada" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Burguer Salada
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Servido em um pão brioche, um hambúrguer de
+                                    150g, queijo cheddar derretido, alface fresca, tomate maduro, cebola roxa fatiada,
+                                    picles crocantes e maionese especial, tudo</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/hamburguer-8.png" alt="Smash Green Fresh" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Smash Green Fresh
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Servido em um pão de hambúrguer integral, com
+                                    ingredientes frescos, como alface, tomate maduro, pepino fatiado, cebola roxa,
+                                    picles, regado com um molho especial de ervas.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM - MODAL CARD BURGUERS -->
+
+            <!-- INICIO - MODAL CARD SOBREMESAS -->
+            <div id="modal2"
+                class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-[70]">
+                <div class="bg-white py-6 px-4 rounded-lg shadow-lg w-[95%] h-[80%] overflow-y-auto relative">
+
+                    <div class="fixed right-5 md:right-10 lg:right-20">
+                        <!-- Botão de fechar no canto superior direito -->
+                        <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                            onclick="closeModalCard('modal2')">X</button>
+                    </div>
+
+                    <div class="w-full flex flex-col gap-8 overflow-hidden">
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/sobremesa1.jpg" alt="Sobremesa Berry Bliss Delight"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Berry Bliss Delight
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Granola, morango, banana e sorvete: uma
+                                    explosão de sabores em cada mordida!</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/sobremesa2.jpg" alt="Sobremesa Chocolate Cake"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Chocolate Cake</h3>
+                                <p class="text-md md:text-2xl text-black">Um bolo de chocolate exuberante, coberto com
+                                    ganache de avelãs crocantes para uma experiência indulgente e irresistível!</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM - MODAL CARD SOBREMESAS -->
+
+            <!-- INICIO - MODAL CARD DRINKS -->
+            <div id="modal3"
+                class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-[70]">
+                <div class="bg-white py-6 px-4 rounded-lg shadow-lg w-[95%] h-[80%] overflow-y-auto relative">
+
+                    <div class="fixed right-5 md:right-10 lg:right-20">
+                        <!-- Botão de fechar no canto superior direito -->
+                        <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                            onclick="closeModalCard('modal3')">X</button>
+                    </div>
+
+                    <div class="w-full flex flex-col gap-8 overflow-hidden">
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/drink1.jpg" alt="Drink Orange Frost"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Orange Frost</h3>
+                                <p class="text-md md:text-2xl text-black">Refrescante cocktail de laranja servido em um
+                                    elegante copo com cubos de gelo picados e decoração com tubulações.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/drink2.jpg" alt="Drink Berry Bliss"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Berry Bliss</h3>
+                                <p class="text-md md:text-2xl text-black">Um cocktail refrescante e vibrante, preparado
+                                    com uma mistura de frutas vermelhas frescas, servido com gelo.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/drink3.jpg" alt="Drink Lemon Sparkler"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Lemon Sparkler</h3>
+                                <p class="text-md md:text-2xl text-black">Um elegante cocktail de espumante adornado com
+                                    fatias de limão, pronto para celebrar momentos especiais.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/drink4.jpg" alt="Drink Minted Lime Refresher"
+                                    class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Minted Lime Refresher
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Um elegante cocktail de espumante adornado com
+                                    fatias de limão, pronto para celebrar momentos especiais.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM - MODAL CARD DRINKS -->
+
+            <!-- INICIO - MODAL CARD COMBOS -->
+            <div id="modal4"
+                class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-[70]">
+                <div class="bg-white py-6 px-4 rounded-lg shadow-lg w-[95%] h-[80%] overflow-y-auto relative">
+
+                    <div class="fixed right-5 md:right-10 lg:right-20">
+                        <!-- Botão de fechar no canto superior direito -->
+                        <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded"
+                            onclick="closeModalCard('modal4')">X</button>
+                    </div>
+
+                    <div class="w-full flex flex-col gap-8 overflow-hidden">
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/promo1.jpg" alt="Combo / Smash Bacon + Batata + Refri" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Combo / Smash Bacon +
+                                    Batata + Refri
+
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Burguer duplo de 150g cada, um hambúrguer
+                                    irresistível com duas carnes de 150g, cheddar derretido cremoso, bacon crocante,
+                                    cebola caramelizada e molho especial + Batata frita 200g + Refri lata.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/promo2.jpg" alt="Combo / Smash Bacon + Refri" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Combo / Smash Bacon +
+                                    Refri
+
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Burguer duplo de 150g cada, um hambúrguer
+                                    irresistível com duas carnes de 150g, cheddar derretido cremoso, bacon crocante,
+                                    cebola caramelizada e molho especial + Refri lata.</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/promo3.jpg" alt="Combo / 2 Smash Master" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Combo / 2 Smash
+                                    Master
+
+
+
+                                </h3>
+                                <p class="text-md md:text-2xl text-black">Servido em um pão brioche, Hambúrguer duplo de
+                                    150g cada, queijo cheddar derretido, generosas fatias de bacon crocante, cebola
+                                    caramelizada, alface, maionese artesanal e um molho especial da casa</p>
+                            </div>
+                        </div>
+
+                        <span
+                            class="text-white text-xl md:text-xl lg:text-2xl xl:text-3xl text-center uppercase font-bold border-b-4 border-[#C51D15]"></span>
+
+                        <div class="w-full flex items-center gap-4 ">
+                            <div class="flex-shrink-0">
+                                <img src="./LandingPageHamburgueria/public/assets/promo4.jpg" alt="Combo / 3 Burguer Salada" class="h-44 w-32 object-cover rounded-lg">
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-black text-md md:text-xl font-bold pb-1 uppercase">Combo / 3 Burguer
+                                    Salada</h3>
+                                <p class="text-md md:text-2xl text-black">Servido em um pão brioche, um hambúrguer de
+                                    150g, queijo cheddar derretido, alface fresca, tomate maduro, cebola roxa fatiada,
+                                    picles crocantes e maionese especial, tudo</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM - MODAL CARD DRINKS -->
+
+        </section>
+        <!-- FIM - MODAIS -->
+
+        <!-- INICIO - SLIDE PROMOÇÕES -->
+        <div id="slide" class="relative overflow-hidden mt-[-10px] bg-[#FB8B0D] lg:hidden">
+            <div class="flex flex-col justify-center items-center pb-10">
+                <h2
+                    class="text-black text-xl lg:text-2xl xl:text-3xl md:text-4xl text-center uppercase font-bold border-b-4 border-[#C51D15]">
+                    Promoções</h2>
+            </div>
+            <!-- Slide Wrapper -->
+            <div id="slideWrapper" class="flex transition-transform duration-500">
+                <div class="w-screen flex-shrink-0 flex items-center justify-center">
+
+                    <img src="assets/promo1.jpg" alt="Promoção 1" class="w-full h-auto ">
+                </div>
+
+                <div class="w-screen flex-shrink-0 flex items-center justify-center">
+                    <img src="assets/promo2.jpg" alt="Promoção 2">
+                </div>
+
+                <div class="w-screen flex-shrink-0  flex items-center justify-center">
+                    <img src="assets/promo3.jpg" alt="Promoção 3">
+                </div>
+            </div>
+
+            <!-- Setinhas de navegação -->
+            <button id="prevBtn"
+                class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white px-4 py-2 rounded-md shadow-md z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="nextBtn"
+                class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white px-4 py-2 rounded-md shadow-md z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+        <!-- FIM - SLIDE PROMOÇÕES -->
+    </main>
+
+    <!-- INICIO FOOTER -->
+    <footer class="bg-black text-white py-8" id="contatos">
+        <div class="container mx-auto flex flex-col md:flex-row i justify-between lg:justify-around px-4">
+            <div class="mb-4 md:mb-0 text-center ">
+                <h2 class="text-2xl font-bold">Localização</h2>
+                <p class="text-center md:text-lg ">Rua das Hamburguerias, 123</p>
+                <p class="text-center md:text-lg ">Cidade dos Hamburgers</p>
+                <p class="text-center md:text-lg ">CEP: 12345-678</p>
+            </div>
+
+            <div class="mb-4 md:mb-0 text-center ">
+                <h2 class="text-2xl font-bold">Horário de Funcionamento</h2>
+                <p class="text-center md:text-lg ">Segunda a Domingo: 18h às 22h</p>
+            </div>
+
+            <div class="text-center ">
+                <h2 class="text-2xl font-bold">Redes Sociais</h2>
+                <div class="flex justify-center  space-x-4 mt-2">
+                    <a href="#" class="text-white hover:text-[#FB8B0D] hover:scale-125 transition-all duration-300">
+                        <i class="uil uil-facebook text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-[#FB8B0D] hover:scale-125 transition-all duration-300">
+                        <i class="uil uil-twitter text-4xl"></i>
+                    </a>
+                    <a href="#" class="text-white  hover:text-[#FB8B0D] hover:scale-125 transition-all duration-300">
+                        <i class="uil uil-instagram text-4xl"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-8  pt-4">
+            <div class="container mx-auto text-center">
+                <p class="md:text-xl">&copy; 2024 Kiel Burguer <br> Todos os direitos reservados.</p>
+            </div>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-gray-800">
+            <div class="container mx-auto text-center">
+                <p class="md:text-lg">Desenvolvido por <a href="https://ezequiel-developer.github.io/" target="_blank">Ezequiel Avelino</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./LandingPageHamburgueria/public/script.js"></script>
+
+</body>
+
+</html>

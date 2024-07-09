@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+}
+
+.custom-background {
+    background-image: url('./assets/front-view-woman-eating-meat-burgers.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+.elementsX{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.showX{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+.elementsY{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(-100%);
+    transition: all 2s;
+}
+
+.showY{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateY(0);
+}
+
+.container:nth-child(1){
+    transition-delay: 100ms;
+}
+
+.container:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.container:nth-child(3){
+    transition-delay: 300ms;
+}
+
+.container:nth-child(4){
+    transition-delay: 400ms;
+}
+
